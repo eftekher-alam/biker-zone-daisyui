@@ -15,6 +15,18 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-orange': '#E76F51',
+                        'color-light-orange': 'rgba(231, 111, 81, 0.10)'
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .font-poppins {
             font-family: 'Poppins', sans-serif;
@@ -54,13 +66,93 @@
                     </ul>
                 </div>
                 <div class="w-auto visible">
-                    <a class="btn btn-error text-white max-md:hidden">Login</a>
-                    <a class="btn btn-error btn-sm text-white md:hidden">Login</a>
+                    <a class="btn bg-color-orange text-white max-md:hidden">Login</a>
+                    <a class="btn btn-sm bg-color-orange text-white md:hidden">Login</a>
                 </div>
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- carousel -->
+        <section class="lg:px-32">
+            <div class="carousel w-full">
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="w-full flex items-center bg-color-light-orange">
+                        <div class=" p-24 w-3/6">
+                            <h1 class="text-5xl font-bold my-2">Ride-on R15 V4 with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="my-3 btn bg-color-orange text-white">Purchase</a>
+                        </div>
+                        <div class=" p-24 w-3/6 ">
+                            <img src="./images/slider/bike1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="w-full flex items-center bg-color-light-orange">
+                        <div class=" p-24 w-3/6">
+                            <h1 class="text-5xl font-bold my-2">Ride-on R15 V4 with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="my-3 btn bg-color-orange text-white">Purchase</a>
+                        </div>
+                        <div class=" p-24 w-3/6 ">
+                            <img src="./images/slider/bike2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="w-full flex items-center bg-color-light-orange">
+                        <div class=" p-24 w-3/6">
+                            <h1 class="text-5xl font-bold my-2">Ride-on R15 V4 with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="my-3 btn bg-color-orange text-white">Purchase</a>
+                        </div>
+                        <div class=" p-24 w-3/6 ">
+                            <img src="./images/slider/bike3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="w-full flex items-center bg-color-light-orange">
+                        <div class=" p-24 w-3/6">
+                            <h1 class="text-5xl font-bold my-2">Ride-on R15 V4 with Smile</h1>
+                            <p>Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <a class="my-3 btn bg-color-orange text-white">Purchase</a>
+                        </div>
+                        <div class=" p-24 w-3/6">
+                            <img src="./images/slider/bike4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
